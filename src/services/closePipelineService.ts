@@ -23,5 +23,5 @@ export function getPipelines() {
 }
 
 export async function getOpportunitiesByPipelineId(pipelineId: string) {
-  return pipelineId;
+  return closeAxiosInstance.get('/opportunity', { params: { pipeline_id: pipelineId } });
 }
