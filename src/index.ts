@@ -3,9 +3,9 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-import { errorHandlerMiddleware } from './middlewares';
-import { constants } from './config';
-import { rootRouter } from './routes';
+import { errorHandlerMiddleware } from '@/middlewares';
+import { constants } from '@/config';
+import { rootRouter } from '@/routes';
 
 const app = express();
 

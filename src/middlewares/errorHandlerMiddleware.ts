@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { ReasonPhrases, StatusCodes } from 'http-status-codes';
-import { BaseError } from '../errors';
+import { BaseError } from '@/errors';
 
 export function errorHandlerMiddleware(error: Error, _: Request, res: Response, __: NextFunction) {
   if (error instanceof BaseError) {

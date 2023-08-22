@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import { StatusCodes } from 'http-status-codes';
-import { closePipelineService } from '../services';
+import { closePipelineService } from '@/services';
 
 export async function getPipelines(_: Request, res: Response, next: NextFunction) {
   try {
