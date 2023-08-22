@@ -26,7 +26,7 @@ Now the server is accessible on http://localhost:8000 (or the PORT key specified
 
 This server has a router for Close.com integration, available at /api/close-pipelines, with 2 endpoints:
 
-GET '/', for fetching all the pipelines of the user, identified by the API_KEY in the .env file
+GET '/', for fetching all the pipelines of the user, identified by the CLOSE_API_KEY in the .env file
 
 GET '/:pipelineId/opportunities', for fetching all opportunities for a single pipeline, :pipelineId param being the id of the necessary pipeline
 
