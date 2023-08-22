@@ -12,7 +12,7 @@ import { rootRouter } from '@/routes';
 const app = express();
 
 app.use(cors(corsConfig));
-app.use(helmet);
+app.use(helmet());
 app.use('/api', rootRouter);
 app.use(errorHandlerMiddleware);
 
