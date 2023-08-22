@@ -13,9 +13,7 @@ const closeAxiosInstance = axios.create({
 
 closeAxiosInstance.interceptors.response.use(
   (response) => response.data,
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
 export function getPipelines() {
