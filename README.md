@@ -8,7 +8,7 @@ The project structure is in line with the best practices of the community, by se
 
 Additionally each folder has an index.ts file for cleaner exporting/importing of the functionality.
 
-This solution has an integrating error handling middleware, and some custom user-defined errors, that could be thrown in cases that are not fatal.
+This solution has an integrated error handling middleware, and some custom user-defined errors, that could be thrown in cases that are not fatal.
 
 The approach I took was creating a service, that handles the requesting(with the help of axios) from the close.com API, as explained in the technical task.
 
